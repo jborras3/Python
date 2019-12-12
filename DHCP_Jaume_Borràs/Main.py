@@ -3,13 +3,22 @@ from DHCP import DHCP
 from PC import PC
 from switch import switch
 from router import router
+from so import so
 
 count = 0  # contador para el array creacion de rango de ip's (arrays empiezan por 0)
 network = ipaddress.ip_network("192.168.0.0/24")  # ip de red y la mascara
 gateway = "/24"
 numTotalPC = 0
 switch = switch("", "", network, "")
+name = "Windows"
+version = "7"
+architecture = "x64"
+onlyCommands = False
+caseSensitive = False
+spaceRequeriment = 12000
+hddSpace = 512000
 
+so = so(name, version, architecture, onlyCommands, caseSensitive, spaceRequeriment)
 
 print("Enciendiendo switch")
 print("Enciendiendo router")
@@ -61,11 +70,13 @@ print("")
 count = 0
 while count < numTotalPC:
     ip = DHCPServer.getipDisponibles()[0]
-    pc = PC("pc" + str(count), ip, network, gateway)
+    pc = PC("pc" + str(count), ip, network, gateway, hddSpace, "")
     switch.anadirPCs(pc)
     DHCPServer.getipDisponibles().pop(0)
     switch.getipDisponibles().pop(0)
     count += 1
+
+
 
 print("Lista de ordenadores:")
 switch.getInfoPcs()
@@ -80,3 +91,12 @@ switch.setDHCP(DHCPServer)
 router.AddSwitch(switch)
 for switchs in router.getSwitches():
     switch.getInfoPcs()
+
+print("")
+print("Ha que pc quieres intalar el siguiente SO?:")
+print("")
+print(so.getName()+so.getVersion()+" "+so.getArchitecture()+" "+so.getSpaceRequeriment()+"MB")
+print("")
+v = int(input())
+if(pc[v].getHddSpace() < so.getSpaceRequeriment()):
+    pc[v].
