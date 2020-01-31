@@ -51,6 +51,6 @@ class PC(object):
 
     def IntallSO(self, ):
 
-    def __str__(self):
+     def __str__(self):
         info = "Nombre: "+str(self.nombre)+" so: "+so.getName()+so.getVersion()+" "+so.getArchitecture()+"Espacio de disco "+str(self.hddSpace)+"MB"+" ip: "+str(self.ip)+" network: "+str(self.network)
         return info

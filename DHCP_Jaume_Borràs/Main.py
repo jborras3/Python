@@ -98,5 +98,3 @@ print("")
 print(so.getName()+so.getVersion()+" "+so.getArchitecture()+" "+so.getSpaceRequeriment()+"MB")
 print("")
 v = int(input())
-if(pc[v].getHddSpace() < so.getSpaceRequeriment()):
-    pc[v].
