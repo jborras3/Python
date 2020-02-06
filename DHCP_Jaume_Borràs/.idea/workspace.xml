@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edb72bfe-f5e5-4ca9-97e7-6317568acc56" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Battle/Batalla.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Battle/Batalla.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Battle/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Battle/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC.py" beforeDir="false" afterPath="$PROJECT_DIR$/PC.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

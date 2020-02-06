@@ -7,11 +7,14 @@ class Batalla:
     def menuEligePersonaje(self):
         print("Elige un personje")
         print("[1] El shico voley")
+        print("HP: Mana:")
         print("[2] KaanaDiense")
+        print("HP: Mana:")
         print("[3] Thor-cido")
+        print("HP: Mana:")
         print("[4] ElJefe de PUBG")
+        print("HP: Mana:")
         time.sleep(0.5)
-
     def menuCombate(self):
         while False:
             print("Elige acción")
