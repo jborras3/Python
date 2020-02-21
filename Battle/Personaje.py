@@ -1,7 +1,3 @@
-import Tecnicas
-import Batalla
-
-
 class Personaje(object):
 
     def __init__(self, nombreP, hp, mana, dmg):
@@ -10,6 +6,12 @@ class Personaje(object):
         self.mana = mana
         self.dmg = dmg
         self.lTecnicas = []
+
+    def setTecnicas(self,nuevaTecnicas1, nuevaTecnicas2, nuevaTecnicas3, nuevaTecnicas4):
+        self.lTecnicas.append(nuevaTecnicas1)
+        self.lTecnicas.append(nuevaTecnicas2)
+        self.lTecnicas.append(nuevaTecnicas3)
+        self.lTecnicas.append(nuevaTecnicas4)
 
     def setnombreP(self, nombreP):
         self.nombreP = nombreP
@@ -39,5 +41,3 @@ class Personaje(object):
         for Tecnicas in self.lTecnicas:
             print(Tecnicas)
 
-    def setnuevatecnica(self,Tecnicas):
-        self.lTecnicas.append(Tecnicas)

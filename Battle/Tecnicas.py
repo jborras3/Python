@@ -1,8 +1,7 @@
-import Personaje
-import Batalla
 
 
-class Tecnicas():
+
+class Tecnicas(object):
 
     def __init__(self, nuevoNombreT, nuevoCriticoT, nuevoDanoT, nuevoManaT, nuevaPunteria, nuevoEfectoT):
         self.nombreT = nuevoNombreT
